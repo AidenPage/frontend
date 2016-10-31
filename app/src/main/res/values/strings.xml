@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">frontend</string>
+    <string name="please_select_a_crud_option">Please select a option</string>
+    <string name="create">CREATE</string>
+    <string name="read_by_id">READ BY ID</string>
+    <string name="read_all">READ ALL</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="submit">Submit</string>
+    <string name="enter_id_to_read">Enter ID to read</string>
+    <string name="enter_id_to_delete">Enter ID to Delete</string>
+    <string name="read">Read</string>
+    <string name="home">Home</string>
+    <string name="enter_id_to_update">Enter ID to update</string>
+    <string name="enter_new_name">Enter new name</string>
+    <string name="enter_new_price">Enter new price</string>
+    <string name="enter_cold_drink_details">Enter memory details</string>
+    <string name="all_entries_in_the_database">All entries in the database</string>
+</resources>

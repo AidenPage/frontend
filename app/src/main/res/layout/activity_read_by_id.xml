@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.ReadObjectByID">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enter_cold_drink_details"
+        android:id="@+id/txtSelectObjectReadID"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEnterID"
+        android:inputType="number"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:width="250dp"
+        android:hint="@string/enter_id_to_read"
+        android:maxLines="1"
+        android:layout_below="@+id/txtSelectObjectReadID" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/txtShowByID"
+        android:layout_below="@+id/btnSubmitID"
+        android:layout_centerHorizontal="true"
+        android:width="250dp"
+        android:height="250dp"
+        android:layout_above="@+id/btnReadByIDHome" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:id="@+id/btnReadByIDHome"
+        android:onClick="onBtnReadByIDHomeClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtEnterID"
+        android:layout_alignEnd="@+id/txtEnterID"
+        android:width="100dp"
+        android:height="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/btnSubmitID"
+        android:onClick="onBtnSubmitIDClick"
+        android:width="100dp"
+        android:height="50dp"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/txtEnterID"
+        android:layout_alignRight="@+id/txtEnterID"
+        android:layout_alignEnd="@+id/txtEnterID" />
+
+</RelativeLayout>

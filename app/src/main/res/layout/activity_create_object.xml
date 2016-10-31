@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.CreateObject">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enter_cold_drink_details"
+        android:id="@+id/txtSelectObjectCreate"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:inputType="text"
+        android:width="250dp"
+        android:maxLines="1"
+        android:hint="@string/enter_name"
+        android:layout_below="@+id/txtSelectObjectCreate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtPrice"
+        android:layout_below="@+id/txtName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:maxLines="1"
+        android:width="250dp"
+        android:hint="@string/enter_price"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/btnSubmitCreate"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:width="100dp"
+        android:height="50dp"
+        android:onClick="onBtnSubmitCreateClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:id="@+id/btnReadDataHome"
+        android:width="100dp"
+        android:height="50dp"
+        android:onClick="onBtnReadDataHomeClick"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
